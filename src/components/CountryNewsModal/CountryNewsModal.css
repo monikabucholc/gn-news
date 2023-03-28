@@ -1,0 +1,29 @@
+.gn-country-news-modal-title {
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.gn-country-news-modal-author {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.gn-country-news-modal-content {
+    font-family: 'Source Serif Pro', serif;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.gn-country-news-modal-url {
+    text-decoration: none;
+    color: var(--active-text-color);
+    word-break: break-all;
+}
+
+.gn-country-news-modal-url:hover {
+    opacity: 0.65;
+    color: var(--active-text-color);
+}

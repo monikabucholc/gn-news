@@ -1,0 +1,21 @@
+.gn-footer {
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    width: 80%;
+    height: 60px;
+    z-index: 1;
+    background-color: var(--white-color);
+    bottom: 0
+}
+.gn-footer-container {
+    display: flex;
+    border-top: 1px solid var(--main-text-color);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 600;
+    padding: 0 2rem;
+}
+

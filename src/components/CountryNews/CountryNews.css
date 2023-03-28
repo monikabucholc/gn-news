@@ -1,0 +1,43 @@
+.gn-country-news-container-list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--main-text-color);
+    cursor: pointer;
+}
+
+.gn-country-news-container-grid {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 100%;
+}
+
+.gn-country-news-image-box {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+    background-color: var(--background-color);
+}
+
+.gn-country-news-image {
+    width: 100%;
+    object-fit: cover;
+    filter: saturate(0.4)
+}
+
+.gn-country-news-title {
+    padding: 1rem 0;
+    font-weight: 700;
+    font-size: 1.2rem
+}
+
+.gn-country-news-details {
+    margin-top: auto;
+}
+
+.gn-country-news-source {
+    font-size: 1.1rem;
+    font-style: italic;
+}

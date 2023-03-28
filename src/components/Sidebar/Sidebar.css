@@ -1,0 +1,53 @@
+.gn-sidebar {
+    grid-column: 1;
+    display: flex;
+    position: fixed; 
+    flex-direction: column; 
+    width: 320px;
+    padding: 2rem 0 2rem;
+    height: 100%;
+    background: var(--white-color);
+    overflow-y: auto;
+    gap: 0.5rem;
+    color: var(--main-text-color);
+}
+
+.gn-sidebar::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.gn-sidebar-container {
+    border-right: 1px solid var(--main-text-color);
+    padding: 0 2rem 12rem 2rem;
+}
+
+.gn-sidebar-category {
+    font-weight: 700; 
+    font-size: 1.5rem;
+}
+
+.gn-sidebar-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.gn-sidebar-link {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.gn-sidebar-link:hover {
+    color: var(--main-text-color);
+}
+
+@media screen and (max-width: 900px) {
+    .gn-sidebar {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        padding: 2rem 1rem 2rem 2rem;
+        min-height: calc(100vh - 166px);
+    } 
+}  

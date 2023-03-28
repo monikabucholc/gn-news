@@ -1,0 +1,31 @@
+.gn-country-newslist {
+    grid-column: 2;
+    align-content: start;
+    padding-bottom: 8rem;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .gn-country-newslist {
+        margin-left: 0;
+    } 
+}
+
+.gn-country-newslist-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.gn-country-newslist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    column-gap: 2rem;
+    row-gap: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .gn-country-newslist-grid {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}

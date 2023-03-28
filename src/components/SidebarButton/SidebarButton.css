@@ -1,0 +1,30 @@
+.gn-sidebar-button {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-weight: 400;
+    margin: 1.5rem 0 1.5rem -1rem;
+    padding-left: 1rem;
+}
+
+.gn-sidebar-button:hover {
+    background-color: var(--active-background-color);
+    font-weight: 700;
+    color: var(--main-text-color)
+}
+
+.gn-sidebar-button-flag {
+    filter: saturate(0.2)
+}
+
+.gn-sidebar-button-name {
+    font-family: 'Source Sans Pro', serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-left: 1rem;
+}
+
+.gn-sidebar-name-active {
+    color: var(--active-text-color);
+    font-weight: 700;
+}

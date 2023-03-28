@@ -1,0 +1,17 @@
+.gn-error {
+    grid-column: 2;
+    display: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.gn-error-link {
+    font-family: 'Source Sans Pro', serif;
+    color: var(--active-text-color)
+}
