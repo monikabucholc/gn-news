@@ -19,8 +19,8 @@ const CountryNewsList = () => {
     //Gets number of article to pass it to Footer 
     useEffect(() => {
         dispatch(setNumber(data.totalResults))
-        // eslint-disable-next-line
-    }, [data])
+        
+    }, [data, dispatch])
 
     return (
         <div className={`gn-country-newslist ${viewMode === 'list' ? "gn-country-newslist-list" : "gn-country-newslist-grid"}`}>
