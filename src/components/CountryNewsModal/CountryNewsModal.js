@@ -22,7 +22,7 @@ const CountryNewsModal = ({showModal, setShowModal, news }) => {
                 </Modal.Header>
                 <Modal.Body>
                     <p className="gn-country-news-modal-author">{news.author ? `${t('author')}: ${news.author}` : null}</p>
-                    <p className="gn-country-news-modal-content">{news.content ? news.content.substring(0, news.content.lastIndexOf('.') + 1).trim() : null}</p>
+                    <p className="gn-country-news-modal-content">{news.text ? news.text : null}</p>
                     <a className="gn-country-news-modal-url" href={news.url}>{news.url ? `${t('source')}: ${news.url}` : null}</a>
                 </Modal.Body>
                 <Modal.Footer>

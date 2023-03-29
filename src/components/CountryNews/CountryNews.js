@@ -21,12 +21,12 @@ const CountryNews = ({ viewMode, article }) => {
     <div>
         <div onClick={() => showNews()}  className={viewMode === 'list' ? "gn-country-news-container-list" : "gn-country-news-container-grid"} >
             <div className="gn-country-news-image-box" style={viewMode === 'list' ? {display: "none"} : null}>
-                <img className="gn-country-news-image" alt={article.title} src={article.urlToImage ? article.urlToImage : defaultImage}></img>
+                <img className="gn-country-news-image" alt={article.title} src={article.image ? article.image : defaultImage}></img>
             </div>
             <div className="gn-country-news-title"> {article.title}</div>
             <div className="gn-country-news-details">
-                <div className="gn-country-news-source"> {article.source.name}</div>
-                <div className="gn-country-news-date"> {article.publishedAt.replace("T", " ").replace("Z", "")}</div>
+                <div className="gn-country-news-source"> {article.author}</div>
+                <div className="gn-country-news-date"> {article.publish_date}</div>
             </div>
         </div>
         <CountryNewsModal news={news} showModal={showModal} setShowModal={setShowModal}/>
