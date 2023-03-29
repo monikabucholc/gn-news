@@ -18,13 +18,13 @@ const CountryNewsList = () => {
 
     //Gets number of article to pass it to Footer 
     useEffect(() => {
-        dispatch(setNumber(data.number))
+        dispatch(setNumber(data.totalArticles))
         // eslint-disable-next-line
     }, [data])
 
     return (
         <div className={`gn-country-newslist ${viewMode === 'list' ? "gn-country-newslist-list" : "gn-country-newslist-grid"}`}>
-            {data.news.map((article, index) => (
+            {data.articles.map((article, index) => (
                 <CountryNews 
                     key={index}
                     article={article}

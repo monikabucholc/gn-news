@@ -25,8 +25,8 @@ const CountryNews = ({ viewMode, article }) => {
             </div>
             <div className="gn-country-news-title"> {article.title}</div>
             <div className="gn-country-news-details">
-                <div className="gn-country-news-source"> {article.author}</div>
-                <div className="gn-country-news-date"> {article.publish_date}</div>
+                <div className="gn-country-news-source"> {article.source.name}</div>
+                <div className="gn-country-news-date"> {article.publishedAt.replace("T", " ").replace("Z", "")}</div>
             </div>
         </div>
         <CountryNewsModal news={news} showModal={showModal} setShowModal={setShowModal}/>
