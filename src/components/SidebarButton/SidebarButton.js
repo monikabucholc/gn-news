@@ -16,7 +16,7 @@ const SidebarButton = ({ country }) => {
         <img className="gn-sidebar-button-flag" src={country.flag} width="24px" height="16px" alt={country.name}></img>
         <span className={`gn-sidebar-button-name ${location.pathname === `/country/${country.code}` ? 'gn-sidebar-name-active' : null} `}
         > 
-            {i18n.language == 'pl' ? country.name_pl : country.name_en}
+            {i18n.language === 'pl' ? country.name_pl : country.name_en}
         </span>
     </div>
     )

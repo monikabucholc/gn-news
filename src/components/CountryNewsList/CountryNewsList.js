@@ -11,7 +11,6 @@ import './CountryNewsList.css'
 const CountryNewsList = () => {
     //States
     const viewMode = useSelector(state => state.viewMode.mode);
-    const articleNumber = useSelector(state => state.articleNumber.number);
     const dispatch = useDispatch();
 
     //Gets data from react-router loader --> function fetching API
@@ -20,6 +19,7 @@ const CountryNewsList = () => {
     //Gets number of article to pass it to Footer 
     useEffect(() => {
         dispatch(setNumber(data.totalResults))
+        // eslint-disable-next-line
     }, [data])
 
     return (

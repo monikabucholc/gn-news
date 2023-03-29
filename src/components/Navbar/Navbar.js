@@ -36,9 +36,9 @@ const Navbar = ({ showMenu, setShowMenu }) => {
     }
 
     //Handle language change
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const changeLanguageHandler = () => {
-        if (i18n.language == 'pl') {
+        if (i18n.language === 'pl') {
             i18n.changeLanguage('en');
         } else {
             i18n.changeLanguage('pl');
@@ -55,7 +55,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
                 </button>
             </div>
             <div className="gn-navbar-buttons">
-                <button className="gn-navbar-language" onClick={changeLanguageHandler}>{i18n.language == 'pl' ? 'EN' : 'PL'}</button>
+                <button className="gn-navbar-language" onClick={changeLanguageHandler}>{i18n.language === 'pl' ? 'EN' : 'PL'}</button>
                 <button className="gn-navbar-i-button" onClick={handleViewMode}>
                     <img src={viewMode === 'list' ? iconGrid : iconList } width="40px" alt="Type of view mode icon"></img>
                 </button>
