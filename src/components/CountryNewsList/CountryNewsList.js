@@ -20,7 +20,7 @@ const CountryNewsList = () => {
     useEffect(() => {
         dispatch(setNumber(data.totalResults))
         
-    }, [data, dispatch])
+    }, [data])
 
     return (
         <div className={`gn-country-newslist ${viewMode === 'list' ? "gn-country-newslist-list" : "gn-country-newslist-grid"}`}>
