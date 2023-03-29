@@ -1,5 +1,5 @@
 import { availableInNewsApi } from '../data/countriesList'
-const API_KEY = "1f817d4de1c94205839469ce38e47a21";
+const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
 
     
 export const fetchNews = async (request) => {
