@@ -24,7 +24,7 @@ const CountryNewsList = () => {
 
     return (
         <div className={`gn-country-newslist ${viewMode === 'list' ? "gn-country-newslist-list" : "gn-country-newslist-grid"}`}>
-            {data.articles.map((article, index) => (
+            {data && data.articles && data.articles.map((article, index) => (
                 <CountryNews 
                     key={index}
                     article={article}
