@@ -16,7 +16,7 @@ const CountryNews = ({ viewMode, article }) => {
     }
     
     return (
-    <div>
+    <div data-testid='country-news-article'>
         <div onClick={() => showNews()}  className={viewMode === 'list' ? "gn-country-news-container-list" : "gn-country-news-container-grid"} >
             <div className="gn-country-news-image-box" style={viewMode === 'list' ? {display: "none"} : null}>
                 <img className="gn-country-news-image" alt={article.title} src={article.image ? article.image : defaultImage}></img>

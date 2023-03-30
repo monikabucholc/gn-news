@@ -16,6 +16,5 @@ test('clicking on sidebar button leads to correct link', () => {
   );
   const sidebarButton = screen.getByText('Australia');
   fireEvent.click(sidebarButton);
-  
   expect(window.location.pathname).toBe('/country/AU');
 });

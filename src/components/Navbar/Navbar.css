@@ -64,15 +64,38 @@
 }
 
 @media all and (max-width: 900px) {
+    .gn-navbar {
+        display: flex;
+        box-sizing: border-box;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        height: 150px;
+        padding: 22px 0 0;
+        background-color: var(--white-color);
+    }
+       
+    .gn-navbar-container {
+        flex-direction: column;
+    }
+
     .gn-navbar-show-menu {
         padding-left: 0;
         display: flex; 
         order: -1;
     }
+
     .gn-navbar-logo {
-        padding-left: 0.5rem;
-        font-size: 2rem;
+        padding-left: 2rem;
+        font-size: 2.2rem;
     }
+    .gn-navbar-buttons {
+        margin: auto 0 auto 0;
+        display: flex;
+        justify-content: center;
+    }
+
     .gn-navbar-i-button {
         margin-right: 0;
     }

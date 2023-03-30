@@ -9,8 +9,8 @@ i18n
                 translation: {
                     "author": "Author",
                     "close": "Close",
-                    "numberOfArticles": "Number of articles available on https://gnews.io/:",
-                    "displayedNumber": "Displayed number of articles: 10",
+                    "numberOfArticles": "Articles available on https://gnews.io/:",
+                    "displayedNumber": "Displayed articles: 10",
                     "source": "Source",  
                     "getLatestNews": "Get the latest news",
                     "selectCountry": "Select a country to get the top headlines",
@@ -22,8 +22,8 @@ i18n
                 translation: {
                     "author": "Autor",
                     "close": "Zamknij",
-                    "numberOfArticles": "Liczba artykułów dostępna w https://gnews.io/:",
-                    "displayedNumber": "Wyświetlana liczba artykułów: 10",
+                    "numberOfArticles": "Artykuły dostępne w https://gnews.io/:",
+                    "displayedNumber": "Wyświetlane artykuły: 10",
                     "source": "Źródło",
                     "getLatestNews": "Zdobądź najnowsze informacje",
                     "selectCountry": "Wybierz kraj by uzyskać najważniejsze wiadomości",

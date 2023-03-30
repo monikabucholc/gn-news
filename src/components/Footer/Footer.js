@@ -24,8 +24,8 @@ const Footer = () => {
     <div className="gn-footer">
         <div className="gn-footer-container">
             <div> 
-                <span>{t('numberOfArticles')} <strong>{articleNumber}</strong></span>
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;{t('displayedNumber')}</span>
+                <span>{t('numberOfArticles')} <strong>{articleNumber} </strong></span>
+                <span>{t('displayedNumber')}</span>
             </div>
             <div> {time.toLocaleTimeString()}</div>
         </div>

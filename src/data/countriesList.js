@@ -24,7 +24,6 @@ export const availableInNewsApi = [
 	"ro",
  	"ru",
 	"sg",
-	"es",
 	"se",
 	"ch",
 	"tw",

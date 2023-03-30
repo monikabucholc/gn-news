@@ -50,6 +50,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .gn-dashboard {
+        margin-left: 0;
+    }
     .gn-dashboard-container {
         grid-template-columns: 1fr;
         margin-top: 2rem;
