@@ -20,7 +20,7 @@ const NavbarPopup = ({ showPop, setShowPop }) => {
                         Największą trudność w zadaniu sprawiły mi testy, ponieważ dotychczas nie 
                         miałam z nimi doświadczenia, a dodatkowo napotkałam na trudności w konfiguracji pakietu RTL z Vite. 
                         Ostatecznie skorzystałam z CRA, by w celu rozwiązania zadania w rozsądnym czasie skupić się na nauce samych testów, a nie konfiguracji. 
-                        Załączone testy działają.<br/><br/>
+                        <br/><br/>
                         Tworzenie pozostałych funkcjonalności było dla mnie fajną zabawą.
                         Największą frajdę sprawił mi projekt UI aplikacji. Obecnie skupiam się na rozwoju programistycznym, 
                         ale projektowanie użytkowe i graficzne zawsze sprawia mi przyjemność.
