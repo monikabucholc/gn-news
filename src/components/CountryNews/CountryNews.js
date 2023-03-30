@@ -9,11 +9,9 @@ import './CountryNews.css'
 const CountryNews = ({ viewMode, article }) => {
     //States
     const [showModal, setShowModal] = useState(false);
-    const [news, setNews] = useState({})
 
     //Popup with selected article
     const showNews = () => { 
-        setNews(article);
         setShowModal(!showModal);
     }
     
@@ -29,7 +27,7 @@ const CountryNews = ({ viewMode, article }) => {
                 <div className="gn-country-news-date"> {article.publishedAt.replace("T", " ").replace("Z", "")}</div>
             </div>
         </div>
-        <CountryNewsModal news={news} showModal={showModal} setShowModal={setShowModal}/>
+        <CountryNewsModal article={article} showModal={showModal} setShowModal={setShowModal}/>
     </div>
     )
 }
