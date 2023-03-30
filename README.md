@@ -1,4 +1,4 @@
-# https://monika-bucholc-gn-news.netlify.app
+## https://monika-bucholc-gn-news.netlify.app
 
 # gnNews - gnStudio React.js developer challenge
 
