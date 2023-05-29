@@ -4,12 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 //Slice
 import { setMode } from '../../redux/viewModeSlice';
-//Components 
-import NavbarPopup from '../NavbarPopup/NavbarPopup';
 //Icons
 import iconGrid from '../../assets/grid_view_FILL0_wght400_GRAD0_opsz48.svg';
 import iconList from '../../assets/view_agenda_FILL0_wght400_GRAD0_opsz48.svg';
-import iconComment from '../../assets/comment_FILL0_wght400_GRAD0_opsz48.svg';
 import iconHamburger from '../../assets/menu_FILL0_wght400_GRAD0_opsz48.svg'
 //Style 
 import './Navbar.css';
@@ -18,7 +15,6 @@ import './Navbar.css';
 const Navbar = ({ showMenu, setShowMenu }) => {
     //States
     const viewMode = useSelector(state => state.viewMode.mode);
-    const [showPop, setShowPop] = useState(false);
     const dispatch = useDispatch();
 
     //Hamburger menu button for mobile
@@ -59,12 +55,8 @@ const Navbar = ({ showMenu, setShowMenu }) => {
                 <button className="gn-navbar-i-button" onClick={handleViewMode}>
                     <img src={viewMode === 'list' ? iconGrid : iconList } width="40px" alt="Type of view mode icon"></img>
                 </button>
-                <button className="gn-navbar-i-button" onClick={() => setShowPop(!showPop)}>
-                    <img src={iconComment} width="40px" alt="Feedback about application"></img>
-                </button>
             </div>
         </div>
-        <NavbarPopup showPop={showPop} setShowPop={setShowPop}/>
     </nav>
     )
 }
